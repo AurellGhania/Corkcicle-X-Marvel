@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+.wrapper {
+    overflow-x: hidden;
+    // position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/* Header & Navigation */
+
+
+
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 10%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 4px 4px 22px 0px rgba(100, 19, 231, 0.137);
+    z-index: 100;
+
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 3.5em;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1rem;
+}
+
+nav ul li a.active:before {
+    position: relative;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a:before {
+    position: relative;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 3px solid blueviolet;
+    bottom: -6px;
+    border-radius: 2rem;
+    transition: width .10s;
+}
+
+nav ul li a:hover:before {
+    width: 80%;
+}
+
+//introducing
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+    font-family:'Oswald', sans-serif; 
+    font-size: 35px; font-weight:400; 
+    text-transform: uppercase; 
+    color:#3d3c3a; padding:0; margin-top:4rem;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color: white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #ff1900;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center; letter-spacing:8px; font-size:35px;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+#parallax-world-of-ugg .title .h1-2 { background-color: #ffff00;}
+#parallax-world-of-ugg .title .h1-3 { color: white; background-color: #fb1212;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://wdwmagic.twic.pics/ElementGalleryItems/shopping/Fullsize/Corkcicle-at-Disney-Springs_Full_51467.jpg?twic=v1/resize=1420); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;width: auto; height: auto;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://i.ytimg.com/vi/lz47XxFrF_s/maxresdefault.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;width: auto; height: auto;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://cdn.shopify.com/s/files/1/0105/8732/t/49/assets/0ad6edce0406--MARVEL-22-3-4.jpg?v=1657219037); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center; width: auto; height: auto;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+
+// Horizontal scroll
+
+svg {
+    position: absolute;
+    top: 12em;
+    left: 10vw;
+    width: 50vw;
+
+    .mask {
+        width: 0;
+    }
+}
+
+.container {
+    display: flex;
+    width: 300vw;
+
+    .col {
+        display: flex;
+        gap: 3em;
+        
+        p {
+            font-size: .8rem;
+        }
+    }
+
+    section {
+        width: 100vw;
+        padding: 20vw 10vw;
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 50vw;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 3em;
+            width: 100%;
+            height: 300px;
+            padding: 0;
+
+            li {
+                background: white;
+                border-radius: .3em;
+                flex-grow: 1;
+            }
+        }
+
+    }
+}
+
+section {
+    height: 100vh;
+
+}
+
+// //Text Animation
+
+
+.text-anim {
+    height: 100vh;
+    padding: 0 clamp(4rem, 12vw, 20rem);
+    display: grid;
+    place-content: center;
+
+    p {
+        font-size: clamp(2rem, 5vw, 8rem);
+    }
+
+    &:nth-of-type(1) {
+        border-bottom: 1px solid black;
+    }
+
+    &:nth-of-type(3) {
+        background: #ffff00;
+    }
+
+    &:nth-of-type(4) {
+        background: rgb(29, 29, 29);
+        color: white;
+    }
+}
+
+//Image Galery
+
+
+.big-text { 
+    font-size: 14rem; 
+    font-family: 'Bebas Neue';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    margin: 0;
+    color: white;
+}
+.foto {
+    display: inline-flex;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    z-index: -2;
+}
+
+//image bergerak
+
+.fixed-image{
+    margin-right: 20rem;
+    margin-top: 5rem;
+  
+    .inner {
+      width: 36%;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+    }
+  
+    .image {
+      width: 100%;
+      overflow: hidden;
+      position: sticky;
+      top: 120px;
+      left: 50%;
+  
+      img {
+        width: 10rem;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  
+    .content {
+      display: flex;
+      padding-top: 40%;
+      color: #fff;
+      font-size: 24px;
+  
+      p {
+        width: 50%;
+        margin-left: auto;
+      }
+    }
+  }
+
+  a{
+text-decoration:none;
+outline:none !important;
+color:#fff;
+}
+
+.border-shape {
+background: #ffbe00 none repeat scroll 0 0;
+color: #fff;
+display: block;
+height: 3px;
+left: 0;
+margin: 20px auto;
+position: relative;
+right: 0;
+text-align: center;
+top: 0;
+width: 80px;
+}
+
+.border-shape::before {
+background: #ffbe00 none repeat scroll 0 0;
+bottom: 0;
+content: "";
+height: 1px;
+left: 80px;
+margin: 0 auto;
+position: absolute;
+text-align: center;
+top: 1px;
+width: 100px;
+}
+
+.border-shape::after {
+background: #ffbe00 none repeat scroll 0 0;
+bottom: 0;
+content: "";
+height: 1px;
+margin: 0 auto;
+position: absolute;
+right: 80px;
+text-align: center;
+top: 1px;
+width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    padding: 100px 100px;
+}
+
+.atas {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.address img {
+    margin-bottom: 21px; 
+}
+
+.address .add {
+    color: #5C6574;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    width: 408px;
+    height: 90px;
+}
+
+
+.navigation-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-footer {
+    color: #3a434d;
+    font-family: Poppins;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.navigation-footer a {
+    color: #5C6574;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.dishes-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.dishes-footer a {
+    color: #5C6574;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 250% */
+}
+
+.sosmed-footer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background: transparent;
+    border: 1px solid #101A24;
+    padding: 7px;
+    border-radius: 50%;
+    color: #101A24;
+}
+
+.bawah {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bawah p {
+    color: #5C6574;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.privacy {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+  
+    .footer__addr {
+      flex: 1 0px;
+    }
+  
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+  
+
+
